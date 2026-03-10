@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        int ITEM1;
+        int ITEM2;
+        int PROD;
+        
+        ITEM1 = input.nextInt();
+        ITEM2 = input.nextInt();
+        
+        PROD = ITEM1 * ITEM2;
+        
+        System.out.printf("PROD = %d%n", PROD);
+        
+ 
+    }
+ 
+}
