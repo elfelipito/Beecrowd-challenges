@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        String name = input.nextLine();
+        double fixedsalary = input.nextDouble();
+        double sales = input.nextDouble();
+        
+        double totalsalary = fixedsalary + (sales * 0.15);
+        
+        System.out.printf("TOTAL = R$ %.2f%n", totalsalary);
+ 
+    }
+ 
+}
