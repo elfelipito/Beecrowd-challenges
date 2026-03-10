@@ -1,0 +1,30 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        
+        int Product1;
+        int Product2;
+        int QntProd1;
+        int QntProd2;
+        float PriceProd1;
+        float PriceProd2;
+        float Total;
+        
+        Product1 = input.nextInt();
+        QntProd1 = input.nextInt();
+        PriceProd1 = input.nextFloat();
+        
+        Product2 = input.nextInt();
+        QntProd2 = input.nextInt();
+        PriceProd2 = input.nextFloat();
+    
+        Total = (PriceProd1 * QntProd1) + (PriceProd2 * QntProd2);       
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f%n", Total);
+    }
+ 
+}
