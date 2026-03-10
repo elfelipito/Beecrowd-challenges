@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner input = new Scanner(System.in);
+        
+        int EmployerNumber;
+        int HoursWorked;
+        float AmountPerHour;
+        float Salary;
+        
+        EmployerNumber = input.nextInt();
+        HoursWorked = input.nextInt();
+        AmountPerHour = input.nextFloat();
+        
+        Salary = HoursWorked * AmountPerHour;
+        
+        System.out.printf("NUMBER = %d%n", EmployerNumber);
+        System.out.printf("SALARY = U$ %.2f%n", Salary);
+        
+    }
+ 
+}
